@@ -1,11 +1,12 @@
 import React from "react";
 import "../index.css";
+import Formulario from "../components/form.js";
 
 class Form extends React.Component {
   render() {
     return (
       <div className="formulario">
-      <h2 className="text-center">Formulario</h2>
+      <Formulario />
       </div>
     );
   }

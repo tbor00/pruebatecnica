@@ -12,11 +12,16 @@ import Sidebar from "./components/sidebar.js";
 
 function App() {
   return (
-    <React.Fragment>
-    	<Sidebar/>
-        <Home/>
-      <Footer/>
-    </React.Fragment>
+    <Router>
+      <Sidebar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/admin" component={Admin} />
+        <Route exact path="/clients" component={Clients} />
+        <Route exact path="/formulario" component={Form} />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 

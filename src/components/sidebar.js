@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { SidebarData } from "../components/SidebarData";
 import "../styles/sidebar.css";
 import { IconContext } from "react-icons";
+import Logo from "../img/epayco1.png";
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -26,6 +27,7 @@ function Navbar() {
                 <AiIcons.AiOutlineClose />
               </Link>
             </li>
+            <img src={Logo} alt="" className="logo" />
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
