@@ -6,15 +6,14 @@ import Footer from "./components/footer.js";
 import Clients from "./pages/clients.js";
 import Admin from "./pages/admin.js";
 import Form from "./pages/formulario.js";
-
-
-
+import Sidebar from "./components/sidebar.js";
 
 
 
 function App() {
   return (
     <React.Fragment>
+    	<Sidebar/>
         <Home/>
       <Footer/>
     </React.Fragment>
